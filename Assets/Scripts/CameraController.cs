@@ -14,8 +14,18 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
+        TrackPlayer();
+    }
+
+    /* Tracks player vertically if it jumps higher */
+    private void TrackPlayer()
+    {
         Vector3 position = transform.position;
-        position.y = (player.transform.position + offset).y;
-        transform.position = position;
+        float newPositionY = (player.transform.position + offset).y;
+        if (newPositionY > position.y)
+        {
+            position.y = newPositionY;
+            transform.position = position;
+        }
     }
 }

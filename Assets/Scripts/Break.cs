@@ -19,10 +19,13 @@ public class Break : MonoBehaviour
     /* If someone hits it, it breaks */
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        Rigidbody2D player = collider.gameObject.GetComponent<Rigidbody2D>();
-        if (player.velocity.y <= 0)
+        if (collider.gameObject.tag == "Player")
         {
-            animator.SetTrigger("BreakStartTrigger");
+            Rigidbody2D player = collider.gameObject.GetComponent<Rigidbody2D>();
+            if (player.velocity.y <= 0)
+            {
+                animator.SetTrigger("BreakStartTrigger");
+            }
         }
     }
 }

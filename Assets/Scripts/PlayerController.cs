@@ -51,7 +51,6 @@ public class PlayerController : MonoBehaviour
     {
         moveInput = Input.acceleration.x;
         rb2d.velocity = new Vector2(moveInput * speed, rb2d.velocity.y);
-        Debug.Log(Input.acceleration.ToString());
     }
 
     /* If player moving upwards changing its score */
