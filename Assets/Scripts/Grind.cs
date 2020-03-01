@@ -45,7 +45,6 @@ public class Grind : MonoBehaviour
                      player.transform.position.y + (14 + Random.Range(0.2f, 1.0f))), Quaternion.identity);
 
         }
-
         Destroy(collision.gameObject);
     }
 }

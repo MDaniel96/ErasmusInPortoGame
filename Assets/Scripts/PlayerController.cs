@@ -13,11 +13,15 @@ public class PlayerController : MonoBehaviour
 
     public float minX;
     public float maxX;
+    public float minY;
+
     public float offsetScreenEdge;
 
     public float speed;
 
     public Text scoreText;
+
+    public GameObject restartPanel;
 
     void Start()
     {
@@ -31,6 +35,7 @@ public class PlayerController : MonoBehaviour
         SetFaceDirection();
         SetScore();
         CheckLeavingScreen();
+        CheckDeath();
     }
 
     void FixedUpdate()
@@ -88,6 +93,15 @@ public class PlayerController : MonoBehaviour
         {
             Vector3 newPosition = new Vector3(minX + offsetScreenEdge, transform.position.y, 0);
             transform.position = newPosition;
+        }
+    }
+
+    /* If player leaves screen bottom, it dies */
+    private void CheckDeath()
+    {
+        if (transform.position.y < minY + topScore)
+        {
+            restartPanel.SetActive(true);
         }
     }
 }

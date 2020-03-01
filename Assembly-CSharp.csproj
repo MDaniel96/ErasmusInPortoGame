@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\Break.cs" />
     <Compile Include="Assets\Scripts\ButtonManager.cs" />
     <Compile Include="Assets\Scripts\CameraController.cs" />
+    <Compile Include="Assets\Scripts\GameMaster.cs" />
     <Compile Include="Assets\Scripts\Grind.cs" />
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Reference Include="Unity.Timeline.Editor">
