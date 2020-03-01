@@ -1,50 +1,74 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Grind : MonoBehaviour
 {
-    public GameObject player;
-    public GameObject platformPrefabs;
-    public GameObject springPrefabs;
-    public GameObject breakPrefabs;
+    public GameObject Player;
+    public GameObject NormalPlatform;
+    public GameObject SpringPlatform;
+    public GameObject BreakPlatform;
 
-    public float minX;
-    public float maxX;
+    public int Level = 8;
+    public int FixPrefabsOnTheScreen = 7;
+
+    public float MinX;
+    public float MaxX;
 
     void Start()
     {
-        
+
     }
 
     void Update()
     {
-        
+
+    }
+
+    private float SetYPositionByPlayerAndLevel()
+    {
+        return Player.transform.position.y + (Level + Random.Range(0.2f, 1.0f));
+    }
+
+    private void CreateNormalPlatform()
+    {
+        GameObject newPlatform = Instantiate(NormalPlatform,
+                                 new Vector2(Random.Range(MinX, MaxX),
+                                 SetYPositionByPlayerAndLevel()), Quaternion.identity);
+    }
+
+    private void CreateSpringPlatform()
+    {
+        GameObject newPlatform = Instantiate(SpringPlatform,
+                     new Vector2(Random.Range(MinX, MaxX),
+                     SetYPositionByPlayerAndLevel()), Quaternion.identity);
+    }
+
+    private void CreateBreakPlatform()
+    {
+        GameObject newBreak = Instantiate(BreakPlatform,
+                      new Vector2(Random.Range(MinX, MaxX),
+                      SetYPositionByPlayerAndLevel()), Quaternion.identity);
     }
 
     /* Creating a new platform when old one is destroyed */
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (Random.Range(1, 7) > 1)
-        {
-            if (Random.Range(1, 7) > 4)
-            {
-                GameObject newBreak = (GameObject)Instantiate(breakPrefabs,
-                     new Vector2(Random.Range(minX, maxX),
-                     player.transform.position.y + (14 + Random.Range(0.2f, 1.0f))), Quaternion.identity);
-
-            }
-            GameObject newPlatform = (GameObject)Instantiate(platformPrefabs,
-                                 new Vector2(Random.Range(minX, maxX),
-                                 player.transform.position.y + (14 + Random.Range(0.2f, 1.0f))), Quaternion.identity);
-
-        } else
-        {
-            GameObject newPlatform = (GameObject)Instantiate(springPrefabs,
-                     new Vector2(Random.Range(minX, maxX),
-                     player.transform.position.y + (14 + Random.Range(0.2f, 1.0f))), Quaternion.identity);
-
-        }
         Destroy(collision.gameObject);
+
+        if (!collision.gameObject.name.StartsWith("Break"))
+        {
+            if (Random.Range(1, 8) == 1)
+            {
+                CreateSpringPlatform();
+            }
+            else
+            {
+                CreateNormalPlatform();
+            }
+        }
+
+        if (Random.Range(1, 5) == 1)
+        {
+            CreateBreakPlatform();
+        }
     }
 }
