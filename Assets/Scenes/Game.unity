@@ -1385,15 +1385,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9aa3aa07f1cba54ea8b04845a08f9f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 1708576495}
-  platformPrefabs: {fileID: 5059406405623748268, guid: a4fa30556501d0e408e09f78a43cdda3,
+  Player: {fileID: 1708576495}
+  NormalPlatform: {fileID: 5059406405623748268, guid: a4fa30556501d0e408e09f78a43cdda3,
     type: 3}
-  springPrefabs: {fileID: 4717219527513824480, guid: 69d0617636ddeaf4ca045b90701af566,
+  SpringPlatform: {fileID: 4717219527513824480, guid: 69d0617636ddeaf4ca045b90701af566,
     type: 3}
-  breakPrefabs: {fileID: 678885039698929335, guid: 033b672edbf4fbc448c107ecbdc5497b,
+  BreakPlatform: {fileID: 678885039698929335, guid: 033b672edbf4fbc448c107ecbdc5497b,
     type: 3}
-  minX: -5.5
-  maxX: 5.5
+  Level: 8
+  FixPrefabsOnTheScreen: 7
+  MinX: -5.5
+  MaxX: 5.5
 --- !u!61 &1879724787
 BoxCollider2D:
   m_ObjectHideFlags: 0
