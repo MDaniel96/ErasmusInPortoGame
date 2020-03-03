@@ -40,8 +40,8 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        //MoveByKeys();
-        MoveByGyro();
+        MoveByKeys();
+        //MoveByGyro();
     }
 
     /* Moving player using computer keys */
@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
         if (moveInput < 0)
         {
             this.GetComponent<SpriteRenderer>().flipX = false;
-        } else
+        } else if (moveInput > 0)
         {
             this.GetComponent<SpriteRenderer>().flipX = true;
         }

@@ -1327,7 +1327,7 @@ Transform:
   - {fileID: 1879724785}
   - {fileID: 1123872912}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1729913216
 GameObject:
@@ -1530,6 +1530,7 @@ MonoBehaviour:
     type: 3}
   BreakPlatform: {fileID: 678885039698929335, guid: 033b672edbf4fbc448c107ecbdc5497b,
     type: 3}
+  Hole: {fileID: 4887844397304396280, guid: c9e9a32809167a34283142317a51160c, type: 3}
   Level: 8
   FixPrefabsOnTheScreen: 7
   MinX: -5.5
@@ -1680,7 +1681,7 @@ PrefabInstance:
     - target: {fileID: 5059406405623748265, guid: a4fa30556501d0e408e09f78a43cdda3,
         type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5059406405623748265, guid: a4fa30556501d0e408e09f78a43cdda3,
         type: 3}
