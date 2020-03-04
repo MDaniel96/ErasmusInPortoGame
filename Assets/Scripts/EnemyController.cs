@@ -58,26 +58,17 @@ public class EnemyController : MonoBehaviour
         targetPosition = GetRandomPosition();
     }
 
-    /* Interaction with player */
+    /* Interaction objects */
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
-            Rigidbody2D player = collision.gameObject.GetComponent<Rigidbody2D>();
-            if (player.velocity.y <= 0)
-            {
-                player.AddForce(Vector3.up * UpForce);
-                Die();
-            }
-            if (player.velocity.y > 0)
-            {
-                player.AddForce(Vector3.down * UpForce * 1.5f);
-            }
+            CollideWithPlayer(collision);
         }
     }
 
     /* Enemy falls down rotating */
-    private void Die()
+    public void Die()
     {
         rotate = true;
         rb2d.gravityScale = GravityScale;
@@ -91,6 +82,21 @@ public class EnemyController : MonoBehaviour
         if (rotate)
         {
             transform.Rotate(0, 0, 600 * Time.deltaTime, Space.Self);
+        }
+    }
+
+    /* If player jumps on it, it pushes it up, if hits it pushes it down */
+    private void CollideWithPlayer(Collision2D collision)
+    {
+        Rigidbody2D player = collision.gameObject.GetComponent<Rigidbody2D>();
+        if (player.velocity.y <= 0)
+        {
+            player.AddForce(Vector3.up * UpForce);
+            Die();
+        }
+        if (player.velocity.y > 0)
+        {
+            player.AddForce(Vector3.down * UpForce * 1.5f);
         }
     }
 }

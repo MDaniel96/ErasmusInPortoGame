@@ -27,5 +27,10 @@ public class Break : MonoBehaviour
                 animator.SetTrigger("BreakStartTrigger");
             }
         }
+
+        if (collider.gameObject.tag == "Bullet")
+        {
+            animator.SetTrigger("BreakStartTrigger");
+        }
     }
 }

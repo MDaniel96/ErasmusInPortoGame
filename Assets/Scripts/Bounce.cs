@@ -21,10 +21,13 @@ public class Bounce : MonoBehaviour
     /* If Player moves downwards on platform it pushes it */
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        player = collision.gameObject.GetComponent<Rigidbody2D>();
-        if (player.velocity.y <= 0)
+        if (collision.gameObject.tag == "Player")
         {
-            player.AddForce(Vector3.up * upForce);
+            player = collision.gameObject.GetComponent<Rigidbody2D>();
+            if (player.velocity.y <= 0)
+            {
+                player.AddForce(Vector3.up * upForce);
+            }
         }
     }
 }

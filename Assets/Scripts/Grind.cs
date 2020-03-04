@@ -7,6 +7,7 @@ public class Grind : MonoBehaviour
     public GameObject SpringPlatform;
     public GameObject BreakPlatform;
     public GameObject Hole;
+    public GameObject Enemy;
 
     public int Level = 8;
     public int FixPrefabsOnTheScreen = 7;
@@ -57,6 +58,13 @@ public class Grind : MonoBehaviour
               SetYPositionByPlayerAndLevel()), Quaternion.identity);
     }
 
+    private void CreateEnemy()
+    {
+        GameObject newHole = Instantiate(Enemy,
+              new Vector2(Random.Range(MinX, MaxX),
+              SetYPositionByPlayerAndLevel()), Quaternion.identity);
+    }
+
     /* Creating a new platform when old one is destroyed */
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -80,9 +88,14 @@ public class Grind : MonoBehaviour
             CreateBreakPlatform();
         }
 
-        if (Random.Range(1, 15) == 1)
+        if (Random.Range(1, 30) == 1)
         {
             CreateHole();
+        }
+
+        if (Random.Range(1, 15) == 1)
+        {
+            CreateEnemy();
         }
     }
 }

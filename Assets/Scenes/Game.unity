@@ -1216,6 +1216,8 @@ MonoBehaviour:
   speed: 20
   scoreText: {fileID: 19257716}
   restartPanel: {fileID: 2070366234}
+  Bullet: {fileID: 4988366506594523180, guid: 4936f50c35331254ea0c64865ba60d2f, type: 3}
+  BulletForce: 5000
 --- !u!50 &1708576497
 Rigidbody2D:
   serializedVersion: 4
@@ -1531,6 +1533,7 @@ MonoBehaviour:
   BreakPlatform: {fileID: 678885039698929335, guid: 033b672edbf4fbc448c107ecbdc5497b,
     type: 3}
   Hole: {fileID: 4887844397304396280, guid: c9e9a32809167a34283142317a51160c, type: 3}
+  Enemy: {fileID: 6559538083861496203, guid: 250b7df9f7c7289428494b640feb7b8e, type: 3}
   Level: 8
   FixPrefabsOnTheScreen: 7
   MinX: -5.5
@@ -1548,7 +1551,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.0033875704, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1559,7 +1562,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2.459627, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &2070366234
 GameObject:

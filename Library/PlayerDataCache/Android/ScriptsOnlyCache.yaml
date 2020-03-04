@@ -3,10 +3,13 @@ ScriptsOnlyBuild:
     Assembly-CSharp.dll:
     - Bounce
     - Break
+    - BulletController
     - ButtonManager
     - CameraController
+    - EnemyController
     - GameMaster
     - Grind
+    - HoleController
     - PlayerController
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
@@ -57,31 +60,37 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11150}
+      Script: {instanceID: 11152}
     - Class: 114
-      Script: {instanceID: 11224}
+      Script: {instanceID: 11192}
     - Class: 114
-      Script: {instanceID: 11322}
+      Script: {instanceID: 11228}
     - Class: 114
-      Script: {instanceID: 11362}
+      Script: {instanceID: 11326}
     - Class: 114
-      Script: {instanceID: 11384}
+      Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 11778}
+      Script: {instanceID: 11388}
     - Class: 114
-      Script: {instanceID: 12048}
+      Script: {instanceID: 11400}
     - Class: 114
-      Script: {instanceID: 12190}
+      Script: {instanceID: 11636}
     - Class: 114
-      Script: {instanceID: 12698}
+      Script: {instanceID: 11786}
     - Class: 114
-      Script: {instanceID: 12888}
+      Script: {instanceID: 12056}
     - Class: 114
-      Script: {instanceID: 12944}
+      Script: {instanceID: 12198}
     - Class: 114
-      Script: {instanceID: 13084}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 17566}
+      Script: {instanceID: 12818}
+    - Class: 114
+      Script: {instanceID: 12898}
+    - Class: 114
+      Script: {instanceID: 12954}
+    - Class: 114
+      Script: {instanceID: 13094}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -120,19 +129,19 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11150}
+      Script: {instanceID: 11152}
     - Class: 114
-      Script: {instanceID: 11362}
+      Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 11778}
+      Script: {instanceID: 11786}
     - Class: 114
-      Script: {instanceID: 12114}
+      Script: {instanceID: 12122}
     - Class: 114
-      Script: {instanceID: 12190}
+      Script: {instanceID: 12198}
     - Class: 114
-      Script: {instanceID: 12698}
+      Script: {instanceID: 12706}
     - Class: 114
-      Script: {instanceID: 13084}
+      Script: {instanceID: 13094}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -164,6 +173,12 @@ ScriptsOnlyBuild:
     className: TMP_SelectionCaret
   - hash:
       serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BulletController
+  - hash:
+      serializedVersion: 2
       Hash: 87ff43d2baf3385cba327d8f803a4ebb
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
@@ -176,7 +191,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: 22faef7dc18263227eeb1990470cd5cb
+      Hash: d715a142ba361a81c30dac3e4e2072d8
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Grind
@@ -248,6 +263,12 @@ ScriptsOnlyBuild:
     className: TMP_InputField
   - hash:
       serializedVersion: 2
+      Hash: c6c52e6a8ed8ae314b42e439ba53945e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnemyController
+  - hash:
+      serializedVersion: 2
       Hash: 7ab0e790220bdca831fdd886b339039d
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -300,6 +321,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.TextMeshPro.dll
     namespaceName: TMPro
     className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameMaster
   - hash:
       serializedVersion: 2
       Hash: 5ab533713adae59372fb3e10a585c186
@@ -368,7 +395,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 5ba5284680c7ba3fb0fc64beabd01c0a
+      Hash: 5dc0f5551c9b8e7dcd6bc2a56687286f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -486,6 +513,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
     className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 72805a50984e91ebe759acd60a2068ec
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HoleController
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -606,14 +639,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: GameMaster
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: G:/egyetem/8/game/tutorials/Doodle Jump Tutorial/Build/v3.apk
+  playerPath: G:/egyetem/8/game/tutorials/Doodle Jump Tutorial/Build/v4.apk
