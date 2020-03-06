@@ -11,6 +11,7 @@ ScriptsOnlyBuild:
     - Grind
     - HoleController
     - PlayerController
+    - TowerController
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
     - UnityEditor.Tilemaps.GridPaletteBrushes
@@ -60,37 +61,39 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11152}
+      Script: {instanceID: 11154}
     - Class: 114
-      Script: {instanceID: 11192}
+      Script: {instanceID: 11194}
     - Class: 114
-      Script: {instanceID: 11228}
+      Script: {instanceID: 11230}
     - Class: 114
-      Script: {instanceID: 11326}
+      Script: {instanceID: 11328}
     - Class: 114
-      Script: {instanceID: 11366}
+      Script: {instanceID: 11368}
     - Class: 114
-      Script: {instanceID: 11388}
+      Script: {instanceID: 11390}
     - Class: 114
-      Script: {instanceID: 11400}
+      Script: {instanceID: 11402}
     - Class: 114
-      Script: {instanceID: 11636}
+      Script: {instanceID: 11638}
     - Class: 114
-      Script: {instanceID: 11786}
+      Script: {instanceID: 11788}
     - Class: 114
-      Script: {instanceID: 12056}
+      Script: {instanceID: 11938}
     - Class: 114
-      Script: {instanceID: 12198}
+      Script: {instanceID: 12060}
     - Class: 114
-      Script: {instanceID: 12706}
+      Script: {instanceID: 12202}
     - Class: 114
-      Script: {instanceID: 12818}
+      Script: {instanceID: 12710}
     - Class: 114
-      Script: {instanceID: 12898}
+      Script: {instanceID: 12822}
     - Class: 114
-      Script: {instanceID: 12954}
+      Script: {instanceID: 12902}
     - Class: 114
-      Script: {instanceID: 13094}
+      Script: {instanceID: 12958}
+    - Class: 114
+      Script: {instanceID: 13098}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -129,19 +132,19 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11152}
+      Script: {instanceID: 11154}
     - Class: 114
-      Script: {instanceID: 11366}
+      Script: {instanceID: 11368}
     - Class: 114
-      Script: {instanceID: 11786}
+      Script: {instanceID: 11788}
     - Class: 114
-      Script: {instanceID: 12122}
+      Script: {instanceID: 12126}
     - Class: 114
-      Script: {instanceID: 12198}
+      Script: {instanceID: 12202}
     - Class: 114
-      Script: {instanceID: 12706}
+      Script: {instanceID: 12710}
     - Class: 114
-      Script: {instanceID: 13094}
+      Script: {instanceID: 13098}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -375,6 +378,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: b6e6038cb08cba4b039cdfa78c9de6bc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TowerController
   - hash:
       serializedVersion: 2
       Hash: b3ab2106268377ffe25dd18ac23dca28
@@ -643,4 +652,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: G:/egyetem/8/game/tutorials/Doodle Jump Tutorial/Build/v4.apk
+  playerPath: G:/egyetem/8/game/tutorials/Doodle Jump Tutorial/Build/v5.apk

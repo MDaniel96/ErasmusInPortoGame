@@ -44,8 +44,8 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        //MoveByKeys();
-        MoveByGyro();
+        MoveByKeys();
+        //MoveByGyro();
     }
 
     /* Moving player using computer keys */
@@ -125,5 +125,10 @@ public class PlayerController : MonoBehaviour
         {
             restartPanel.SetActive(true);
         }
+    }
+
+    public float GetTopScore()
+    {
+        return topScore;
     }
 }
