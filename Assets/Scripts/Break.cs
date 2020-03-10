@@ -5,10 +5,12 @@ using UnityEngine;
 public class Break : MonoBehaviour
 {
     Animator animator;
+    Rigidbody2D body;
 
     void Start()
     {
         animator = GetComponent<Animator>();
+        body = GetComponent<Rigidbody2D>();
     }
 
     void Update()
@@ -24,13 +26,15 @@ public class Break : MonoBehaviour
             Rigidbody2D player = collider.gameObject.GetComponent<Rigidbody2D>();
             if (player.velocity.y <= 0)
             {
-                animator.SetTrigger("BreakStartTrigger");
+                animator.SetTrigger("BreakTrigger");
+                body.bodyType = RigidbodyType2D.Dynamic;
             }
         }
 
         if (collider.gameObject.tag == "Bullet")
         {
-            animator.SetTrigger("BreakStartTrigger");
+            animator.SetTrigger("BreakTrigger");
+            body.bodyType = RigidbodyType2D.Dynamic;
         }
     }
 }

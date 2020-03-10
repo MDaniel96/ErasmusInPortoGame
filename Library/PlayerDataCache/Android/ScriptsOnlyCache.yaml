@@ -20,6 +20,14 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -61,39 +69,39 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11154}
+      Script: {instanceID: 11152}
     - Class: 114
-      Script: {instanceID: 11194}
+      Script: {instanceID: 11192}
     - Class: 114
-      Script: {instanceID: 11230}
+      Script: {instanceID: 11228}
     - Class: 114
-      Script: {instanceID: 11328}
+      Script: {instanceID: 11326}
     - Class: 114
-      Script: {instanceID: 11368}
+      Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 11390}
+      Script: {instanceID: 11388}
     - Class: 114
-      Script: {instanceID: 11402}
+      Script: {instanceID: 11400}
     - Class: 114
-      Script: {instanceID: 11638}
+      Script: {instanceID: 11636}
     - Class: 114
-      Script: {instanceID: 11788}
+      Script: {instanceID: 11786}
     - Class: 114
-      Script: {instanceID: 11938}
+      Script: {instanceID: 11936}
     - Class: 114
-      Script: {instanceID: 12060}
+      Script: {instanceID: 12058}
     - Class: 114
-      Script: {instanceID: 12202}
+      Script: {instanceID: 12200}
     - Class: 114
-      Script: {instanceID: 12710}
+      Script: {instanceID: 12708}
     - Class: 114
-      Script: {instanceID: 12822}
+      Script: {instanceID: 12820}
     - Class: 114
-      Script: {instanceID: 12902}
+      Script: {instanceID: 12900}
     - Class: 114
-      Script: {instanceID: 12958}
+      Script: {instanceID: 12956}
     - Class: 114
-      Script: {instanceID: 13098}
+      Script: {instanceID: 13096}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -132,19 +140,19 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11154}
+      Script: {instanceID: 11152}
     - Class: 114
-      Script: {instanceID: 11368}
+      Script: {instanceID: 11366}
     - Class: 114
-      Script: {instanceID: 11788}
+      Script: {instanceID: 11786}
     - Class: 114
-      Script: {instanceID: 12126}
+      Script: {instanceID: 12124}
     - Class: 114
-      Script: {instanceID: 12202}
+      Script: {instanceID: 12200}
     - Class: 114
-      Script: {instanceID: 12710}
+      Script: {instanceID: 12708}
     - Class: 114
-      Script: {instanceID: 13098}
+      Script: {instanceID: 13096}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -404,7 +412,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 5dc0f5551c9b8e7dcd6bc2a56687286f
+      Hash: 26b796af50c7066cc0a391e77d7d0c10
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -652,4 +660,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: G:/egyetem/8/game/tutorials/Doodle Jump Tutorial/Build/v5.apk
+  playerPath: C:/Users/Peti/ErasmusGameV3/ErasmusInPortoGame/Build/v6.apk

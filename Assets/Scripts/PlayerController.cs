@@ -26,11 +26,17 @@ public class PlayerController : MonoBehaviour
     public GameObject Bullet;
     public float BulletForce;
 
+    public Camera cam;
+
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         gyro = Input.gyro;
         gyro.enabled = true;
+
+        cam = GameObject.Find("Main Camera").GetComponent<Camera>();
+
+        scoreText.transform.position = new Vector2(cam.orthographicSize * Screen.width / Screen.height, cam.orthographicSize - 0.5f);
     }
 
     void Update()
@@ -44,8 +50,8 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        MoveByKeys();
-        //MoveByGyro();
+        // MoveByKeys();
+        MoveByGyro();
     }
 
     /* Moving player using computer keys */
