@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class BulletController : MonoBehaviour
 {
+    float rotationSpeed;
+
     void Start()
     {
-        
+        rotationSpeed = Random.Range(-200, 200);
     }
 
-    void Update()
+    void FixedUpdate()
     {
-        
+        Rotate();
     }
 
     private void OnTriggerEnter2D(Collider2D collider)
@@ -20,5 +22,10 @@ public class BulletController : MonoBehaviour
         {
             collider.gameObject.GetComponent<EnemyController>().Die();
         }
+    }
+
+    private void Rotate()
+    {
+        transform.Rotate(0, 0, rotationSpeed * Time.deltaTime, Space.Self);
     }
 }

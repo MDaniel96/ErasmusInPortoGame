@@ -9,11 +9,10 @@ public class Grind : MonoBehaviour
     public GameObject Hole;
     public GameObject Enemy;
 
-    public int Level = 8;
-    public int FixPrefabsOnTheScreen = 7;
-
     public float MinX;
     public float MaxX;
+
+    int level = 1;
 
     void Start()
     {
@@ -27,7 +26,7 @@ public class Grind : MonoBehaviour
 
     private float SetYPositionByPlayerAndLevel()
     {
-        return Player.transform.position.y + (Level + Random.Range(0.2f, 1.0f));
+        return Player.transform.position.y + 8 + Random.Range(0.2f, 1.0f);
     }
 
     private void CreateNormalPlatform()
@@ -65,6 +64,11 @@ public class Grind : MonoBehaviour
               SetYPositionByPlayerAndLevel()), Quaternion.identity);
     }
 
+    public void IncreaseLevel()
+    {
+        level++;
+    }
+
     /* Creating a new platform when old one is destroyed */
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -73,7 +77,7 @@ public class Grind : MonoBehaviour
         if (collision.gameObject.name.StartsWith("Platform") 
             || collision.gameObject.name.StartsWith("Spring"))
         {
-            if (Random.Range(1, 8) == 1)
+            if (Random.Range(1, 12) == 1)
             {
                 CreateSpringPlatform();
             }
@@ -81,21 +85,24 @@ public class Grind : MonoBehaviour
             {
                 CreateNormalPlatform();
             }
-        }
 
-        if (Random.Range(1, 5) == 1)
-        {
-            CreateBreakPlatform();
-        }
 
-        if (Random.Range(1, 30) == 1)
-        {
-            CreateHole();
-        }
+            if (level == 2 || level == 4)
+                if (Random.Range(1, 9) == 1)
+                {
+                    CreateHole();
+                }
 
-        if (Random.Range(1, 15) == 1)
-        {
-            CreateEnemy();
+            if (level >= 3 && Random.Range(1, 8) == 1)
+            {
+                CreateEnemy();
+            }
+
+            if (Random.Range(1, 10) == 1)
+            {
+                CreateBreakPlatform();
+            }
         }
+        
     }
 }

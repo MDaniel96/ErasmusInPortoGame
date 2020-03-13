@@ -1,6 +1,7 @@
 ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
+    - BeerBarController
     - Bounce
     - Break
     - BulletController
@@ -27,7 +28,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
     - UnityEditor.Graphs.AnimationStateMachine.StateNode
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -102,6 +102,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 12956}
     - Class: 114
       Script: {instanceID: 13096}
+    - Class: 114
+      Script: {instanceID: 29482}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -202,7 +204,7 @@ ScriptsOnlyBuild:
     className: TMP_Dropdown
   - hash:
       serializedVersion: 2
-      Hash: d715a142ba361a81c30dac3e4e2072d8
+      Hash: 28b13c49187bb538555a4b31ac3b8d2a
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Grind
@@ -388,7 +390,7 @@ ScriptsOnlyBuild:
     className: Selectable
   - hash:
       serializedVersion: 2
-      Hash: b6e6038cb08cba4b039cdfa78c9de6bc
+      Hash: f30b68e58ef9c485b52e97989676fcee
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: TowerController
@@ -412,7 +414,7 @@ ScriptsOnlyBuild:
     className: SignalTrack
   - hash:
       serializedVersion: 2
-      Hash: 26b796af50c7066cc0a391e77d7d0c10
+      Hash: 7c1db7823f76a948d838d50b289e9d8b
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PlayerController
@@ -656,8 +658,14 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 73d4f4653a80727a63045a23197c5d38
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BeerBarController
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: C:/Users/Peti/ErasmusGameV3/ErasmusInPortoGame/Build/v6.apk
+  playerPath: G:/egyetem/8/game/ErasmusInPorto/ErasmusInPortoGame/Build/v7.apk

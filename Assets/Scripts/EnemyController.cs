@@ -27,8 +27,8 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
         MoveToTargetPosition();
+        SetFaceDirection();
         Rotate();
-
     }
 
     private void MoveToTargetPosition()
@@ -64,6 +64,20 @@ public class EnemyController : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             CollideWithPlayer(collision);
+        }
+    }
+
+    /* Rotating player if it moves to the right */
+    private void SetFaceDirection()
+    {
+        float xDirection = transform.position.x - targetPosition.x;
+        if (xDirection < 0)
+        {
+            this.GetComponent<SpriteRenderer>().flipX = false;
+        }
+        else if (xDirection > 0)
+        {
+            this.GetComponent<SpriteRenderer>().flipX = true;
         }
     }
 
