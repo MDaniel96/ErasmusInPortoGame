@@ -274,3 +274,7 @@ G:\egyetem\8\game\tutorials\Doodle Jump Tutorial\obj\Debug\Assembly-CSharp.cspro
 G:\egyetem\8\game\tutorials\Doodle Jump Tutorial\obj\Debug\Assembly-CSharp.csproj.CopyComplete
 G:\egyetem\8\game\tutorials\Doodle Jump Tutorial\obj\Debug\Assembly-CSharp.dll
 G:\egyetem\8\game\tutorials\Doodle Jump Tutorial\obj\Debug\Assembly-CSharp.pdb
+C:\Users\Peti\ErasmusGameV4\ErasmusInPortoGame\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
+C:\Users\Peti\ErasmusGameV4\ErasmusInPortoGame\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Peti\ErasmusGameV4\ErasmusInPortoGame\obj\Debug\Assembly-CSharp.dll
+C:\Users\Peti\ErasmusGameV4\ErasmusInPortoGame\obj\Debug\Assembly-CSharp.pdb

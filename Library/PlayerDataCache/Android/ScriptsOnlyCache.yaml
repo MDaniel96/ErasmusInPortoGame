@@ -12,6 +12,7 @@ ScriptsOnlyBuild:
     - Grind
     - HoleController
     - PlayerController
+    - SoundManager
     - TowerController
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
@@ -21,13 +22,6 @@ ScriptsOnlyBuild:
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -40,6 +34,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.GraphicRaycaster
     - UnityEngine.UI.Image
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
   sceneClasses:
     Assets/Scenes/Game.unity:
     - Class: 1
@@ -93,17 +88,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12200}
     - Class: 114
-      Script: {instanceID: 12708}
+      Script: {instanceID: 12710}
     - Class: 114
-      Script: {instanceID: 12820}
+      Script: {instanceID: 12822}
     - Class: 114
-      Script: {instanceID: 12900}
+      Script: {instanceID: 12902}
     - Class: 114
-      Script: {instanceID: 12956}
+      Script: {instanceID: 12958}
     - Class: 114
-      Script: {instanceID: 13096}
+      Script: {instanceID: 13098}
     - Class: 114
-      Script: {instanceID: 29482}
+      Script: {instanceID: 13136}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -137,12 +132,24 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
       Script: {instanceID: 11152}
+    - Class: 114
+      Script: {instanceID: 11326}
     - Class: 114
       Script: {instanceID: 11366}
     - Class: 114
@@ -152,10 +159,16 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 12200}
     - Class: 114
-      Script: {instanceID: 12708}
+      Script: {instanceID: 12700}
     - Class: 114
-      Script: {instanceID: 13096}
+      Script: {instanceID: 12710}
+    - Class: 114
+      Script: {instanceID: 13098}
+    - Class: 114
+      Script: {instanceID: 13114}
     - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -522,6 +535,12 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
+      Hash: 75f37fedfe216674d5506b76a2194568
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SoundManager
+  - hash:
+      serializedVersion: 2
       Hash: ae83e830e7a90c0aff918c4c2e520825
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -648,6 +667,12 @@ ScriptsOnlyBuild:
     className: Slider
   - hash:
       serializedVersion: 2
+      Hash: 73d4f4653a80727a63045a23197c5d38
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BeerBarController
+  - hash:
+      serializedVersion: 2
       Hash: 0fd6822f6177297bd0eb4d83cc7a9030
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
@@ -658,14 +683,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 73d4f4653a80727a63045a23197c5d38
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: BeerBarController
   platform: 13
   scenePathNames:
   - Assets/Scenes/Menu.unity
   - Assets/Scenes/Game.unity
-  playerPath: G:/egyetem/8/game/ErasmusInPorto/ErasmusInPortoGame/Build/v7.apk
+  playerPath: C:/Users/Peti/ErasmusGameV4/ErasmusInPortoGame/Build/v8.apk
