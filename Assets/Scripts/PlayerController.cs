@@ -151,7 +151,7 @@ public class PlayerController : MonoBehaviour
         } else if (topScore > scorePerLevel * 2 && topScore < scorePerLevel * 3)
         {
             scoreText.text = "Level 3: Study at University";
-        } else if (topScore > scorePerLevel * 2 && topScore < scorePerLevel * 3)
+        } else if (topScore > scorePerLevel * 3 && topScore < scorePerLevel * 4)
         {
             scoreText.text = "Level 4: Parties + University";
         }
@@ -191,6 +191,7 @@ public class PlayerController : MonoBehaviour
     {
         if (transform.position.y < minY + topScore)
         {
+            BeerBar.SetActive(false);
             restartPanel.SetActive(true);
         }
     }

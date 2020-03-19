@@ -8,6 +8,7 @@ public class TowerController : MonoBehaviour
     public GameObject Grind;
     public GameObject restartPanel;
     public GameObject gameWonPanel;
+    public GameObject BeerBar;
 
     public float ScorePerLevel;
     public float YPerLevel;
@@ -77,7 +78,8 @@ public class TowerController : MonoBehaviour
     {
         if (playerScript.GetTopScore() > winScore)
         {
-            restartPanel.SetActive(true);
+            BeerBar.SetActive(false);
+            //restartPanel.SetActive(true);
             gameWonPanel.SetActive(true);
             runAnimations = false;
             playerScript.PauseGame();
